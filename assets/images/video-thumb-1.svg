@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vid1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050b14"/>
+      <stop offset="50%" stop-color="#0d2137"/>
+      <stop offset="100%" stop-color="#02060d"/>
+    </linearGradient>
+    <linearGradient id="glowPlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <filter id="videoGlow">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#vid1Bg)"/>
+
+  <!-- High-tech cyber grid & waves -->
+  <g opacity="0.15" stroke="#00f2fe" stroke-width="1.5">
+    <circle cx="640" cy="360" r="300" fill="none" stroke-dasharray="16 10"/>
+    <circle cx="640" cy="360" r="220" fill="none"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+  </g>
+
+  <!-- Tag badge -->
+  <rect x="80" y="60" width="260" height="48" rx="24" fill="rgba(0,242,254,0.12)" stroke="#00f2fe" stroke-width="2"/>
+  <text x="210" y="92" fill="#00f2fe" font-family="'Cairo', sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    AI CINEMATIC VIDEO • يوتيوب
+  </text>
+
+  <!-- Big Play Button Center -->
+  <circle cx="640" cy="340" r="70" fill="url(#glowPlay)" filter="url(#videoGlow)" opacity="0.9"/>
+  <polygon points="625,310 670,340 625,370" fill="#050b14"/>
+
+  <!-- Title Bottom -->
+  <rect x="0" y="540" width="1280" height="180" fill="linear-gradient(to top, rgba(5,11,20,0.95), transparent)"/>
+  <text x="640" y="610" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="38" font-weight="800" text-anchor="middle">
+    مشروع فيديو إبداعي بالذكاء الاصطناعي | AI Video Showcase
+  </text>
+  <text x="640" y="660" fill="#38bdf8" font-family="'Cairo', sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    صناعة فيديو وسرد بصري سينمائي باستخدام أدوات الذكاء الاصطناعي التوليدي
+  </text>
+</svg>

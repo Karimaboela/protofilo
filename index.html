@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- بيانات الميتا الأساسية (SEO) -->
+  <title>كريم محمود | أخصائي فيديو بالذكاء الاصطناعي ومصمم سوشيال ميديا طبي</title>
+  <meta name="title" content="كريم محمود | أخصائي فيديو بالذكاء الاصطناعي ومصمم سوشيال ميديا طبي">
+  <meta name="description" content="الموقع التعريفي الرسمي للمصمم وصانع الفيديو كريم محمود - خريج إعلام، مصمم سوشيال ميديا في ميديا باور، متخصص في تصميم السوشيال ميديا الطبي، وصناعة الفيديو بالذكاء الاصطناعي، والمونتاج.">
+  <meta name="keywords" content="كريم محمود, تصميم سوشيال ميديا طبي, صناعة فيديو بالذكاء الاصطناعي, مونتاج فيديو, ذكاء اصطناعي توليدي, ميديا باور, باحث ذكاء اصطناعي, Karim Mahmoud">
+  <meta name="author" content="كريم محمود">
+  <meta name="robots" content="index, follow">
+
+  <!-- وسوم Open Graph للشبكات الاجتماعية -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://karimmahmoud.portfolio/">
+  <meta property="og:title" content="كريم محمود | أخصائي فيديو بالذكاء الاصطناعي ومصمم سوشيال ميديا طبي">
+  <meta property="og:description" content="معرض أعمال احترافي يركز على تصميم السوشيال ميديا الطبي، إنتاج الفيديو بالذكاء الاصطناعي، ومونتاج الفيديو الإبداعي.">
+  <meta property="og:image" content="assets/images/default-avatar.svg">
+
+  <!-- بطاقات تويتر / X -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="كريم محمود | أخصائي فيديو بالذكاء الاصطناعي ومصمم سوشيال ميديا طبي">
+  <meta property="twitter:description" content="معرض أعمال احترافي يركز على تصميم السوشيال ميديا الطبي، إنتاج الفيديو بالذكاء الاصطناعي، ومونتاج الفيديو الإبداعي.">
+  <meta property="twitter:image" content="assets/images/default-avatar.svg">
+
+  <!-- لون شريط المتصفح -->
+  <meta name="theme-color" content="#060913">
+
+  <!-- الخطوط الرسمية: خط Cairo و Inter عبر Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ملف التنسيقات الرئيسي -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       شريط التنقل العلوي (Header & Navbar)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      
+      <!-- شعار الاسم / الهوية مع إمكانية رفع صورة مخصصة من الجهاز -->
+      <div class="brand-logo-container">
+        <div class="brand-avatar-box" id="brandAvatarBox" role="button" tabindex="0" title="انقر لرفع صورة الشعار من جهازك">
+          <img src="" alt="شعار كريم محمود" id="brandAvatarImg" class="brand-avatar-img hidden" style="display: none;">
+          <div class="brand-monogram" id="brandMonogramFallback">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <button type="button" class="brand-photo-btn" id="brandPhotoChangeBtn" aria-label="رفع وتغيير صورة الشعار" title="رفع صورة جديدة للشعار من جهازك">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+          </button>
+          <button type="button" class="brand-photo-reset-btn hidden" id="brandPhotoResetBtn" aria-label="حذف الصورة" title="حذف الصورة واستعادة الأيقونة الافتراضية" style="display: none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <input type="file" id="brandFileInput" accept="image/*" style="display: none;" aria-hidden="true">
+        </div>
+        <a href="#hero" class="brand-text" aria-label="الصفحة الرئيسية لكريم محمود">
+          <span class="brand-name">كريم محمود</span>
+          <span class="brand-role">محتوى بصري وذكاء اصطناعي</span>
+        </a>
+      </div>
+
+      <!-- روابط القائمة الرئيسية -->
+      <nav class="nav-menu" id="navMenu" aria-label="القائمة الرئيسية">
+        <a href="#hero" class="nav-link active">الرئيسية</a>
+        <a href="#about" class="nav-link">من أنا</a>
+        <a href="#skills" class="nav-link">المهارات</a>
+        <a href="#portfolio" class="nav-link">الأعمال</a>
+        <a href="#experience" class="nav-link">الخبرة</a>
+        <a href="#services" class="nav-link">الخدمات</a>
+        <a href="#contact" class="nav-link">تواصل معي</a>
+      </nav>
+
+      <!-- أدوات التحكم (تبديل الوضع الليلي / القائمة للجوال) -->
+      <div class="nav-actions">
+        <!-- زر تبديل الوضع الليلي / النهاري -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="تبديل الوضع الليلي والنهاري" title="تبديل مظهر الموقع">
+          <!-- أيقونة الشمس (تظهر في الوضع الليلي) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <!-- أيقونة القمر (تظهر في الوضع النهاري) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- زر القائمة للجوال (Hamburger) -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح وإغلاق القائمة" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         القسم الترحيبي (Hero Section)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- تفاصيل النصوص والمعلومات الشخصية -->
+          <div class="hero-content reveal-on-scroll">
+            <div class="hero-eyebrow">
+              <span class="pulse-dot"></span>
+              <span>متاح للمشاريع والتعاون الإبداعي</span>
+            </div>
+
+            <h1 class="hero-title">
+              كريم محمود
+            </h1>
+
+            <div class="hero-role-main text-gradient">
+              أخصائي فيديو بالذكاء الاصطناعي ومصمم سوشيال ميديا طبي
+            </div>
+
+            <div class="hero-role-secondary">
+              <span>مونتير فيديو</span>
+              <span>صانع فيديو بالذكاء الاصطناعي</span>
+              <span>باحث ذكاء اصطناعي</span>
+              <span>خريج إعلام</span>
+            </div>
+
+            <p class="hero-bio-short">
+              "أصنع محتوى بصري احترافي يجمع بين تصميم السوشيال ميديا الطبي، مونتاج الفيديو، وإنتاج الفيديو بالذكاء الاصطناعي."
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#portfolio" class="btn btn-primary">
+                <span>استكشف أعمالي</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m15 18-6-6 6-6"></path>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>تواصل معي</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- بطاقة عرض جيمناي برو البارزة في واجهة الموقع -->
+            <div class="hero-gemini-offer-card">
+              <div class="h-gemini-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" class="h-gemini-svg">
+                  <path d="M12 24C12 17.3726 6.62742 12 0 12C6.62742 12 12 6.62742 12 0C12 6.62742 17.3726 12 24 12C17.3726 12 12 17.3726 12 24Z" fill="url(#heroGeminiGrad)"/>
+                  <defs>
+                    <linearGradient id="heroGeminiGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#38bdf8"/>
+                      <stop offset="50%" stop-color="#a855f7"/>
+                      <stop offset="100%" stop-color="#ec4899"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="h-gemini-content">
+                <div class="h-gemini-tag-row">
+                  <span class="h-gemini-tag">🔥 عرض حصري لـ Gemini Pro</span>
+                  <span class="h-gemini-badge-price">18 شهر بـ 200 جنيه فقط</span>
+                </div>
+                <p class="h-gemini-text">لو حد محتاج اشتراك <strong>جيمناي برو (Gemini Pro)</strong> 18 شهر بـ <strong>200 جنيه</strong> يبعتلي</p>
+              </div>
+              <a href="https://wa.me/201116017705?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%AC%D9%8A%D9%85%D9%86%D8%A7%D9%8A%20%D8%A8%D8%B1%D9%88%2018%20%D8%B4%D9%87%D8%B1%20%D8%A8%D9%80%20200%20%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener noreferrer" class="h-gemini-cta-btn">
+                <span>تواصل عبر واتساب</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </a>
+            </div>
+
+            <!-- شريط شارات التخصص -->
+            <div class="hero-badges-strip">
+              <span class="hero-meta-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                تسويق المحتوى الطبي
+              </span>
+              <span class="hero-meta-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 10-5 5 5 5"></path><path d="M20 4v7a4 4 0 0 1-4 4H4"></path></svg>
+                فيديو الذكاء الاصطناعي التوليدي
+              </span>
+              <span class="hero-meta-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                مصمم في ميديا باور
+              </span>
+            </div>
+          </div>
+
+          <!-- بطاقة الصورة الشخصية مع إمكانية التغيير المباشر -->
+          <div class="hero-visual-card reveal-on-scroll">
+            
+            <!-- شارة عائمة يمين -->
+            <div class="floating-badge floating-badge-1">
+              <div class="badge-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect width="14" height="14" x="1" y="5" rx="2" ry="2"></rect></svg>
+              </div>
+              <div class="badge-text-box">
+                <span class="badge-label">تقنيات بصرية</span>
+                <span class="badge-value">فيديو وريلز بالذكاء الاصطناعي</span>
+              </div>
+            </div>
+
+            <!-- بطاقة البروفايل الرئيسية -->
+            <div class="profile-card-wrapper">
+              <div class="profile-avatar-container">
+                <div class="profile-avatar-inner">
+                  <img src="assets/images/default-avatar.svg" alt="الصورة الشخصية لكريم محمود" id="profileAvatarImg" class="profile-avatar-img">
+                </div>
+                <!-- زر تغيير الصورة التفاعلي -->
+                <button type="button" class="photo-change-btn" id="photoChangeBtn" title="تغيير الصورة الشخصية" aria-label="تغيير الصورة الشخصية">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                </button>
+                <!-- حقل رفع الصورة المخفي -->
+                <input type="file" id="photoFileInput" accept="image/*" style="display: none;" aria-hidden="true">
+              </div>
+
+              <div class="profile-info-footer">
+                <h3 class="profile-footer-name">كريم محمود</h3>
+                <span class="profile-footer-tag">Social Media Designer @ Media Power</span>
+                
+                <div class="profile-status-indicator">
+                  <span class="status-dot"></span>
+                  <span>خريج كلية الإعلام – قسم الإذاعة والتلفزيون</span>
+                </div>
+
+                <!-- زر استعادة الصورة الافتراضية عند رفع صورة مخصصة -->
+                <button type="button" class="photo-reset-btn" id="photoResetBtn" style="display: none;">
+                  استعادة الصورة الافتراضية
+                </button>
+              </div>
+            </div>
+
+            <!-- شارة عائمة يسار -->
+            <div class="floating-badge floating-badge-2">
+              <div class="badge-icon-box purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+              </div>
+              <div class="badge-text-box">
+                <span class="badge-label">مجال التصميم</span>
+                <span class="badge-value">سوشيال ميديا طبي متخصص</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         قسم من أنا (About Me Section)
+         ========================================================================== -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            نبذة مهنية
+          </div>
+          <h2 class="section-title">من أنا</h2>
+          <p class="section-subtitle">
+            دمج المعرفة الإعلامية الأكاديمية مع أحدث تقنيات الذكاء الاصطناعي التوليدي والتصميم الطبي المتخصص.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- السيرة المهنية المعتمدة -->
+          <div class="about-bio-card reveal-on-scroll">
+            <p>
+              كريم محمود هو خريج كلية الإعلام قسم الإذاعة والتلفزيون، ويعمل حالياً كمصمم سوشيال ميديا في شركة ميديا باور (Media Power) مع تركيز قوي على المحتوى الطبي المتخصص.
+            </p>
+            <p>
+              إلى جانب التصميم الجرافيكي، يتخصص في صناعة وتعديل الفيديو بالذكاء الاصطناعي والمونتاج الاحترافي، مع البحث المستمر في أدوات وتطبيقات الذكاء الاصطناعي التوليدي والتقنيات الناشئة لإنتاج المحتوى البصري.
+            </p>
+            <p>
+              يجمع في أسلوبه بين المعرفة الإعلامية، والتصميم البصري، والسرد القصصي، والمونتاج، والذكاء الاصطناعي لتحويل الأفكار والمعلومات إلى محتوى بصري احترافي، واضح، وجذاب.
+            </p>
+          </div>
+
+          <!-- 4 بطاقات معلومات موجزة ومحددة -->
+          <div class="about-cards-grid reveal-on-scroll">
+            
+            <!-- بطاقة المؤهل العلمي -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+                <span class="info-card-title">المؤهل العلمي</span>
+              </div>
+              <div class="info-card-primary">بكالوريوس إعلام</div>
+              <div class="info-card-secondary">قسم الإذاعة والتلفزيون</div>
+            </div>
+
+            <!-- بطاقة الوظيفة الحالية -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+                <span class="info-card-title">الوظيفة الحالية</span>
+              </div>
+              <div class="info-card-primary">مصمم سوشيال ميديا</div>
+              <div class="info-card-secondary">ميديا باور (Media Power)</div>
+            </div>
+
+            <!-- بطاقة التخصص الدقيق -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+                </div>
+                <span class="info-card-title">التخصص الدقيق</span>
+              </div>
+              <div class="info-card-primary">صناعة الفيديو بالذكاء الاصطناعي</div>
+              <div class="info-card-secondary">+ تصميم سوشيال ميديا طبي</div>
+            </div>
+
+            <!-- بطاقة مجال البحث -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+                <span class="info-card-title">مجال البحث</span>
+              </div>
+              <div class="info-card-primary">الذكاء الاصطناعي التوليدي</div>
+              <div class="info-card-secondary">والمحتوى البصري المبتكر</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         قسم المهارات (Skills Section)
+         ========================================================================== -->
+    <section class="skills-section section-padding" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            القدرات الإبداعية
+          </div>
+          <h2 class="section-title">المهارات والخبرات</h2>
+          <p class="section-subtitle">
+            مهارات متكاملة في التصميم الطبي والتواصل الصحي، وصناعة الفيديو، وأدوات الذكاء الاصطناعي المتقدمة.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- فئة المهارة 1: تصميم السوشيال ميديا الطبي -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon cat-icon-medical">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">تصميم السوشيال ميديا الطبي</h3>
+                <span class="skill-cat-desc">بصريات الرعاية الصحية والتواصل الطبي الاحترافي</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>تصميم سوشيال ميديا طبي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>تصميم المحتوى البصري</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>الإخراج الفني الإبداعي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>بصريات منصات التواصل الاجتماعي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>تبسيط وتجسيد المحتوى الطبي</span>
+            </div>
+          </div>
+
+          <!-- فئة المهارة 2: الفيديو والمونتاج -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon cat-icon-video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect width="14" height="14" x="1" y="5" rx="2" ry="2"></rect></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">الفيديو والمونتاج</h3>
+                <span class="skill-cat-desc">المونتاج السينمائي، الإيقاع البصري، وإنتاج الفيديو</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>مونتاج الفيديو (Video Editing)</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>صناعة الفيديو بالذكاء الاصطناعي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>إنتاج الفيديو بالذكاء الاصطناعي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>السرد القصصي البصري</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>الفيديوهات القصيرة والريلز</span>
+            </div>
+          </div>
+
+          <!-- فئة المهارة 3: الذكاء الاصطناعي -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon cat-icon-ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4v1H6a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h2v1a4 4 0 0 0 4 4 4 4 0 0 0 4-4v-1h2a4 4 0 0 0 4-4v-2a4 4 0 0 0-4-4h-2V6a4 4 0 0 0-4-4Z"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">الذكاء الاصطناعي (AI)</h3>
+                <span class="skill-cat-desc">النماذج التوليدية، هندسة الأوامر، والبحث المستمر</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>الذكاء الاصطناعي التوليدي (Generative AI)</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>أدوات فيديو الذكاء الاصطناعي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>صناعة المحتوى المعزز بالذكاء الاصطناعي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>أبحاث الذكاء الاصطناعي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>هندسة الأوامر (Prompt Engineering)</span>
+            </div>
+          </div>
+
+          <!-- فئة المهارة 4: الأدوات والبرامج الإبداعية -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon cat-icon-tools">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">الأدوات والبرامج الإبداعية</h3>
+                <span class="skill-cat-desc">حزم التصميم والمونتاج الاحترافية المعتمدة عالمياً</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>أدوبي فوتوشوب (Adobe Photoshop)</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>أدوبي بريمير برو (Adobe Premiere Pro)</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>أدوات الذكاء الاصطناعي الإبداعية</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>أدوات وبرامج مونتاج الفيديو</span>
+            </div>
+          </div>
+
+          <!-- فئة المهارة 5: تعليق صوتي -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon cat-icon-voice">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">تعليق صوتي</h3>
+                <span class="skill-cat-desc">Voice Over طبيعي، تحويل النص لصوت، وهندسة النبرات</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>Voice Over طبيعي واحترافي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>تحويل النص إلى صوت (Text to Speech)</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>لهجات متعددة ونبرات مخصصة</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>هندسة وتنقية الصوت الرقمي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>صوتيات الإعلانات والريلز</span>
+            </div>
+          </div>
+
+          <!-- فئة المهارة 6: إدارة وتنسيق المستندات والـ PDF -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon cat-icon-docs">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">إدارة وتنسيق المستندات والـ PDF</h3>
+                <span class="skill-cat-desc">تحويل الملفات لـ Word، كتابة وتنسيق التقارير، وتحرير PDF</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>تحويل PDF والصور إلى Word</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>كتابة وتنسيق التقارير والمستندات</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>تحرير وتعديل ملفات PDF</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>الحفاظ على الجداول والتنسيق المكتبي</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>مراجعة وتدقيق طباعي احترافي</span>
+            </div>
+          </div>
+
+          <!-- فئة المهارة 7: صناعة القصص الإسلامية الكرتونية -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon cat-icon-cartoons">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">صناعة القصص الإسلامية الكرتونية</h3>
+                <span class="skill-cat-desc">تحويل التراث والسيرة لقصص كرتونية بتقنيات الذكاء الاصطناعي</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-pill"><span class="skill-pill-dot"></span>تحويل التراث والسيرة لقصص هادفة</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>تصميم الشخصيات والمشاهد بالـ AI</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>كتابة سيناريو تربوي موثوق ومحكم</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>إنتاج وإخراج الفيديو الكرتوني</span>
+              <span class="skill-pill"><span class="skill-pill-dot"></span>الالتزام بالوقار والطابع الإسلامي</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         قسم معرض الأعمال (Portfolio Section - Selected Work)
+         ========================================================================== -->
+    <section class="portfolio-section section-padding" id="portfolio">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+            معرض المشاريع
+          </div>
+          <h2 class="section-title">أعمال مختارة</h2>
+          <p class="section-subtitle">
+            مجموعة مختارة من تصاميم السوشيال ميديا الطبية، فيديوهات الذكاء الاصطناعي، ومشاريع المحتوى البصري.
+          </p>
+        </div>
+
+        <!-- شريط التحكم: التبويبات وأزرار الإضافة التفاعلية -->
+        <div class="portfolio-controls-bar reveal-on-scroll">
+          <div class="portfolio-filter-tabs" role="tablist">
+            <button type="button" class="filter-tab-btn active" data-filter="all" role="tab" aria-selected="true">الكل</button>
+            <button type="button" class="filter-tab-btn" data-filter="video" role="tab" aria-selected="false">فيديوهات الذكاء الاصطناعي</button>
+            <button type="button" class="filter-tab-btn" data-filter="cartoons" role="tab" aria-selected="false">
+              <span>نصائح فيديوهات الكرتون</span>
+            </button>
+            <button type="button" class="filter-tab-btn" data-filter="audio" role="tab" aria-selected="false">
+              <span>التعليق الصوتي</span>
+            </button>
+            <button type="button" class="filter-tab-btn" data-filter="design" role="tab" aria-selected="false">التصاميم والصور</button>
+          </div>
+
+          <div class="portfolio-action-btns">
+            <!-- زر إضافة فيديو ذكاء اصطناعي -->
+            <button type="button" class="btn btn-primary btn-sm" id="btnAddVideo" title="إضافة فيديو ذكاء اصطناعي للمعرض">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>+ إضافة فيديو AI</span>
+            </button>
+
+            <!-- زر إضافة نصيحة كرتونية -->
+            <button type="button" class="btn btn-gold btn-sm" id="btnAddCartoon" title="إضافة فيديو نصائح كرتون">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>+ نصائح كرتون</span>
+            </button>
+
+            <!-- زر إضافة تعليق صوتي جديد -->
+            <button type="button" class="btn btn-emerald btn-sm" id="btnAddAudio" title="رفع ملف تعليق صوتي من جهازك">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+              <span>+ إضافة تعليق صوتي</span>
+            </button>
+
+            <!-- زر إضافة تصميم جديد -->
+            <button type="button" class="btn btn-secondary btn-sm" id="btnAddDesign" title="إضافة تصميم جديد للمعرض">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>+ إضافة تصميم</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- شريط أدوات التخزين الفائق والنسخ الاحتياطي -->
+        <div class="portfolio-toolbar-sub reveal-on-scroll">
+          <div class="storage-status-info">
+            <span class="storage-status-pill">
+              <span class="pulse-dot"></span>
+              <span>سعة تخزين فائقة (IndexedDB)</span>
+            </span>
+            <span id="portfolioCountText">جاري تحميل المعرض...</span>
+          </div>
+
+          <div class="backup-tools-group">
+            <button type="button" class="btn-tool" id="btnExportData" title="تصدير نسخة احتياطية من أعمالك لجهازك">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>تصدير نسخة احتياطية</span>
+            </button>
+            <button type="button" class="btn-tool" id="btnImportData" title="استيراد أعمال من ملف احتياطي">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              <span>استيراد أعمال</span>
+            </button>
+            <input type="file" id="backupFileInput" accept=".json" style="display: none;">
+          </div>
+        </div>
+
+        <!-- بطاقة متابعة سعة التخزين المخصصة: 200 صورة و50 فيديو و50 كرتون و50 صوت -->
+        <div class="capacity-dashboard-card reveal-on-scroll" id="capacityDashboardCard">
+          <div class="capacity-dashboard-header">
+            <div class="capacity-title-wrap">
+              <span class="capacity-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+              </span>
+              <div>
+                <h4 class="capacity-main-title">سعة التخزين المستديمة المحمية (IndexedDB Enterprise)</h4>
+                <span class="capacity-sub-title" id="capacityDiskEstimateText">سعة مضمونة ومستقرة تتسع لـ 50 فيديو ذكاء اصطناعي • 50 فيديو كرتوني • 50 ملف تعليق صوتي • 200 صورة وتصميم</span>
+              </div>
+            </div>
+            <div class="capacity-persisted-badge" id="capacityPersistBadge" title="تم تفعيل التخزين الدائم بالمتصفح للحماية من المسح">
+              <span class="badge-dot-green"></span>
+              <span>تخزين دائم مستقر</span>
+            </div>
+          </div>
+
+          <div class="capacity-meters-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <!-- 1. مؤشر سعة فيديوهات الذكاء الاصطناعي (0 / 50) -->
+            <div class="capacity-meter-box" id="videosMeterBox">
+              <div class="meter-info-line">
+                <span class="meter-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  فيديوهات الذكاء الاصطناعي
+                </span>
+                <span class="meter-counts" id="videosCapacityCount">0 / 50 فيديو</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill fill-purple" id="videosCapacityFill" style="width: 0%;"></div>
+              </div>
+              <div class="meter-extra-note" id="videosCapacityRemaining">متبقي مساحة لـ 50 فيديو إضافي</div>
+            </div>
+
+            <!-- 2. مؤشر سعة نصائح فيديوهات الكرتون (0 / 50) -->
+            <div class="capacity-meter-box" id="cartoonsMeterBox">
+              <div class="meter-info-line">
+                <span class="meter-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  نصائح فيديوهات الكرتون
+                </span>
+                <span class="meter-counts" id="cartoonsCapacityCount">0 / 50 فيديو</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill fill-amber" id="cartoonsCapacityFill" style="width: 0%;"></div>
+              </div>
+              <div class="meter-extra-note" id="cartoonsCapacityRemaining">متبقي مساحة لـ 50 فيديو كرتوني</div>
+            </div>
+
+            <!-- 3. مؤشر سعة التعليق الصوتي (0 / 50) -->
+            <div class="capacity-meter-box" id="audioMeterBox">
+              <div class="meter-info-line">
+                <span class="meter-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                  سعة التعليق الصوتي
+                </span>
+                <span class="meter-counts" id="audioCapacityCount">0 / 50 تسجيل</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill fill-emerald" id="audioCapacityFill" style="width: 0%;"></div>
+              </div>
+              <div class="meter-extra-note" id="audioCapacityRemaining">متبقي مساحة لـ 50 مقطع صوتي</div>
+            </div>
+
+            <!-- 4. مؤشر سعة الصور والتصاميم (0 / 200) -->
+            <div class="capacity-meter-box" id="imagesMeterBox">
+              <div class="meter-info-line">
+                <span class="meter-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                  سعة الصور والتصاميم
+                </span>
+                <span class="meter-counts" id="imagesCapacityCount">0 / 200 صورة</span>
+              </div>
+              <div class="meter-bar-track">
+                <div class="meter-bar-fill fill-cyan" id="imagesCapacityFill" style="width: 0%;"></div>
+              </div>
+              <div class="meter-extra-note" id="imagesCapacityRemaining">متبقي مساحة لـ 200 صورة إضافية</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- شبكة المشاريع الديناميكية -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- يتم ملؤها ديناميكياً عبر الجافاسكريبت بالمشاريع الافتراضية والمشاريع المضافة -->
+        </div>
+
+        <!-- زر عرض المزيد من الأعمال للأعداد الكبيرة (حتى 250 عملاً) -->
+        <div class="load-more-container" id="loadMoreContainer" style="display: none;">
+          <button type="button" class="btn-load-more" id="btnLoadMore">
+            <span>عرض المزيد من الأعمال (+24)</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm" id="btnLoadAll" style="border-radius: var(--radius-full);">
+            <span>عرض كافة الأعمال دفعة واحدة</span>
+          </button>
+          <span class="load-more-count" id="loadMoreCountText"></span>
+        </div>
+
+        <!-- بنر استعراض القنوات الخارجية (بيهانس ويوتيوب) -->
+        <div class="portfolio-external-cta reveal-on-scroll">
+          <div class="portfolio-cta-info">
+            <h3 class="portfolio-cta-title">استكشف القنوات الرسمية ودراسات الحالة الكاملة</h3>
+            <p class="portfolio-cta-sub">
+              شاهد الإنتاجات الكاملة على يوتيوب واستعرض المزيد من دراسات الحالة والتصاميم الطبية على بيهانس.
+            </p>
+          </div>
+          <div class="portfolio-cta-links">
+            <a href="https://www.behance.net/karimaboela" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              <span>مشاهدة المزيد من التصاميم على بيهانس</span>
+            </a>
+            <a href="https://youtube.com/@karimaboela" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><polygon points="10 15 15 12 10 9"></polygon></svg>
+              <span>زيارة قناة اليوتيوب</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         قسم الخبرة المهنية (Experience Section)
+         ========================================================================== -->
+    <section class="experience-section section-padding" id="experience">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            المسار المهني
+          </div>
+          <h2 class="section-title">الخبرة المهنية</h2>
+          <p class="section-subtitle">
+            الممارسة العملية في صناعة المحتوى البصري والتسويق الرقمي الطبي.
+          </p>
+        </div>
+
+        <div class="timeline-container reveal-on-scroll">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              
+              <div class="timeline-card-header">
+                <div class="timeline-company-group">
+                  <div class="company-badge-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                  </div>
+                  <div>
+                    <h3 class="timeline-company-title">ميديا باور (Media Power)</h3>
+                    <div class="timeline-role">مصمم سوشيال ميديا (Social Media Designer)</div>
+                  </div>
+                </div>
+                <div class="timeline-period-badge">
+                  <span>حالي</span>
+                </div>
+              </div>
+
+              <p class="timeline-desc">
+                "ابتكار محتوى بصري احترافي لمنصات التواصل الاجتماعي مع التركيز على التسويق الطبي والتواصل الصحي."
+              </p>
+
+              <div class="timeline-responsibilities-title">المهام والمسؤوليات الرئيسية</div>
+              <div class="timeline-responsibilities-list">
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>تصميم محتوى السوشيال ميديا للمجال الطبي.</span>
+                </div>
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>تطوير المفاهيم البصرية للعلامات التجارية الطبية والمتخصصين في الرعاية الصحية.</span>
+                </div>
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>إنشاء أصول بصرية تفاعلية للمنصات الرقمية.</span>
+                </div>
+                <div class="timeline-resp-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>دمج أسس وقواعد التصميم مع مسارات العمل الإبداعية المدعومة بالذكاء الاصطناعي.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         قسم الخدمات (Services Section)
+         ========================================================================== -->
+    <section class="services-section section-padding" id="services">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            ما أقدمه من خدمات متخصصة
+          </div>
+          <h2 class="section-title">الخدمات الاحترافية</h2>
+          <p class="section-subtitle">
+            حلول رقمية وإبداعية متكاملة تشمل التعليق الصوتي وتحويل النص لصوت بالذكاء الاصطناعي، صناعة القصص الكرتونية، معالجة وتنسيق المستندات والـ PDF، والتصميم الطبي والمونتاج.
+          </p>
+        </div>
+
+        <!-- أزرار تبويب وتصنيف الخدمات التفاعلية -->
+        <div class="services-filter-tabs reveal-on-scroll" role="tablist">
+          <button type="button" class="service-tab-btn active" data-service-filter="all" role="tab" aria-selected="true">
+            <span>جميع الخدمات</span>
+            <span class="service-tab-count">10</span>
+          </button>
+          <button type="button" class="service-tab-btn" data-service-filter="voice" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+            <span>تعليق صوتي</span>
+          </button>
+          <button type="button" class="service-tab-btn" data-service-filter="docs" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            <span>المستندات والـ PDF</span>
+          </button>
+          <button type="button" class="service-tab-btn" data-service-filter="cartoons" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            <span>القصص الكرتونية</span>
+          </button>
+          <button type="button" class="service-tab-btn" data-service-filter="media" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect width="14" height="14" x="1" y="5" rx="2" ry="2"></rect></svg>
+            <span>التصميم والمونتاج</span>
+          </button>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+          
+          <!-- الخدمة 1: تعليق صوتي -->
+          <div class="service-card reveal-on-scroll" data-service-cat="voice">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-voice">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+              </div>
+              <span class="service-badge badge-voice">تعليق صوتي احترافي</span>
+            </div>
+            <h3 class="service-title">🎙️ تعليق صوتي</h3>
+            <p class="service-desc">
+              إنشاء Voice Over طبيعي واحترافي للنصوص بلهجات ولغات متعددة، مع إمكانية اختيار النبرة والأسلوب المناسبين للمحتوى.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>لهجات متعددة ونبرات انفعالية طبيعية</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>دقة ونقاء صوتي فائق بجودة الاستوديوهات</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>تخصيص الأسلوب بما يلائم هوية المشروع</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%20%D8%B5%D9%88%D8%AA%D9%8A" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 2: تحويل النص إلى صوت -->
+          <div class="service-card reveal-on-scroll" data-service-cat="voice">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-voice">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+              </div>
+              <span class="service-badge badge-voice">Text to Speech</span>
+            </div>
+            <h3 class="service-title">🔊 تحويل النص إلى صوت</h3>
+            <p class="service-desc">
+              تحويل النصوص المكتوبة إلى صوت طبيعي باستخدام تقنيات الذكاء الاصطناعي، مناسب للفيديوهات، القصص، المحتوى التعليمي والإعلانات.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>مخارج حروف دقيقة وتشكيل سليم للنصوص</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>مثالي لفيديوهات الريلز واليوتيوب والقصص</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>إنتاج سريع وتنسيق جاهز للتركيب فوراً</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D8%AA%D8%AD%D9%88%D9%8A%D9%84%20%D8%A7%D9%84%D9%86%D8%B5%20%D8%A5%D9%84%D9%89%20%D8%B5%D9%88%D8%AA" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 3: صناعة القصص الإسلامية الكرتونية -->
+          <div class="service-card reveal-on-scroll" data-service-cat="cartoons">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-cartoons">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              </div>
+              <span class="service-badge badge-cartoons">إنتاج كرتوني هادف</span>
+            </div>
+            <h3 class="service-title">📖 صناعة القصص الإسلامية الكرتونية</h3>
+            <p class="service-desc">
+              تحويل القصص والمواقف من التراث والسيرة الإسلامية إلى قصص كرتونية تعليمية وإبداعية، من خلال تصميم الشخصيات والمشاهد وكتابة السيناريو وإنتاج الفيديو باستخدام الذكاء الاصطناعي، مع الحفاظ على الطابع اللائق والمناسب للمحتوى الإسلامي.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>تصميم شخصيات ومشاهد كرتونية متقنة</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>كتابة سيناريو تربوي موثوق ومحكم</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>التزام تام بالوقار والطابع الإسلامي اللائق</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D8%B5%D9%86%D8%A7%D8%B9%D8%A9%20%D8%A7%D9%84%D9%82%D8%B5%D8%B5%20%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9%20%D8%A7%D9%84%D9%83%D8%B1%D8%AA%D9%88%D9%86%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 4: تحويل الملفات إلى Word -->
+          <div class="service-card reveal-on-scroll" data-service-cat="docs">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-docs">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+              </div>
+              <span class="service-badge badge-docs">معالجة المستندات</span>
+            </div>
+            <h3 class="service-title">📄 تحويل الملفات إلى Word</h3>
+            <p class="service-desc">
+              تحويل ملفات PDF والصور والمستندات إلى ملفات Word قابلة للتحرير، مع الحفاظ قدر الإمكان على التنسيق والجداول وترتيب المحتوى.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>دعم ملفات PDF والصور والمستندات الورقية</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>الحفاظ الصارم على الجداول وتوزيع الفقرات</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>نصوص عربية سليمة وقابلة للتحرير المباشر</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D8%AA%D8%AD%D9%88%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA%20%D8%A5%D9%84%D9%89%20Word" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 5: كتابة وتنسيق الملفات -->
+          <div class="service-card reveal-on-scroll" data-service-cat="docs">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-docs">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </div>
+              <span class="service-badge badge-docs">صياغة وتنسيق مكتبي</span>
+            </div>
+            <h3 class="service-title">📝 كتابة وتنسيق الملفات</h3>
+            <p class="service-desc">
+              إنشاء وكتابة وتنسيق المستندات والملفات باحترافية، بما في ذلك التقارير، المستندات، المحتوى التعليمي والملفات الرسمية.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>تنسيق التقارير الرسمية والأبحاث والمستندات</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>إعداد الفهارس والجداول وفق المعايير المعتمدة</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>تدقيق لغوي وطباعي بأعلى دقة واحترافية</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D9%83%D8%AA%D8%A7%D8%A8%D8%A9%20%D9%88%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D8%A7%D9%84%D9%85%D9%84%D9%81%D8%A7%D8%AA" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 6: تعديل ملفات PDF -->
+          <div class="service-card reveal-on-scroll" data-service-cat="docs">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-docs">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M10 12h4"></path><path d="M10 16h4"></path><path d="M10 8h1"></path></svg>
+              </div>
+              <span class="service-badge badge-docs">تحرير متقدم لـ PDF</span>
+            </div>
+            <h3 class="service-title">📑 تعديل ملفات PDF</h3>
+            <p class="service-desc">
+              تحرير وتنسيق ملفات PDF، إضافة أو حذف النصوص والصفحات، ترتيب المحتوى وإجراء التعديلات المطلوبة على المستندات.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>إضافة وحذف وتعديل النصوص والصفحات</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>دمج وتقسيم الملفات وإعادة ترتيب الصفحات</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>الحفاظ على جودة المستند ووضوح الخطوط الأصلية</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%20%D9%85%D9%84%D9%81%D8%A7%D8%AA%20PDF" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 7: تصميم سوشيال ميديا طبي -->
+          <div class="service-card reveal-on-scroll" data-service-cat="media">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-medical">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+              </div>
+              <span class="service-badge badge-medical">تصميم طبي متخصص</span>
+            </div>
+            <h3 class="service-title">تصميم سوشيال ميديا طبي</h3>
+            <p class="service-desc">
+              محتوى بصري احترافي مصمم خصيصاً للعيادات والمراكز الطبية والعلامات الصحية لنقل المعلومة الطبية بأسلوب جذاب وموثوق.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>تصاميم متوافقة مع المعايير الطبية الموثوقة</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>بناء وتطوير الهوية البصرية للعيادة والمحتوى</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>إنفوجرافيك وتوعية صحية مبسطة وجذابة</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7%20%D8%B7%D8%A8%D9%8A" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 8: صناعة فيديو بالذكاء الاصطناعي -->
+          <div class="service-card reveal-on-scroll" data-service-cat="media">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect width="14" height="14" x="1" y="5" rx="2" ry="2"></rect></svg>
+              </div>
+              <span class="service-badge badge-video">إنتاج فيديو بالـ AI</span>
+            </div>
+            <h3 class="service-title">صناعة فيديو بالذكاء الاصطناعي</h3>
+            <p class="service-desc">
+              مفاهيم وإنتاج فيديوهات مبتكرة وسينمائية باستخدام أحدث نماذج الذكاء الاصطناعي التوليدي لمنصات التواصل والمحتوى الرقمي.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>توليد مقاطع بصرية فائقة الواقعية والجمال</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>تحريك الصور الثابتة وسرد بصري تفاعلي</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>ريلز وإعلانات رقمية لافتة للأنظار</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D8%B5%D9%86%D8%A7%D8%B9%D8%A9%20%D9%81%D9%8A%D8%AF%D9%8A%D9%88%20%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 9: مونتاج الفيديو الاحترافي -->
+          <div class="service-card reveal-on-scroll" data-service-cat="media">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 8-6 4 6 4V8Z"></path><rect width="14" height="12" x="2" y="6" rx="2"></rect><circle cx="6" cy="12" r="1.5"></circle></svg>
+              </div>
+              <span class="service-badge badge-video">مونتاج وسرد قصصي</span>
+            </div>
+            <h3 class="service-title">مونتاج الفيديو الاحترافي</h3>
+            <p class="service-desc">
+              تحرير ومونتاج احترافي لفيديوهات السوشيال ميديا، الريلز، الإعلانات الترويجية، والسرد القصصي البصري بإيقاع سينمائي.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>مونتاج سينمائي ببرنامج Premiere Pro</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>تصحيح ألوان وإيقاع بصري سريع وجذاب</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>مؤثرات صوتية وموسيقى تصويرية متناغمة</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D9%85%D9%88%D9%86%D8%AA%D8%A7%D8%AC%20%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- الخدمة 10: محتوى إبداعي بالذكاء الاصطناعي -->
+          <div class="service-card reveal-on-scroll" data-service-cat="voice">
+            <div class="service-card-header">
+              <div class="service-icon-box cat-ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4v1H6a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h2v1a4 4 0 0 0 4 4 4 4 0 0 0 4-4v-1h2a4 4 0 0 0 4-4v-2a4 4 0 0 0-4-4h-2V6a4 4 0 0 0-4-4Z"></path></svg>
+              </div>
+              <span class="service-badge badge-ai">محتوى توليدي مبتكر</span>
+            </div>
+            <h3 class="service-title">محتوى إبداعي بالذكاء الاصطناعي</h3>
+            <p class="service-desc">
+              تجارب وأبحاث وصناعة محتوى بصري متقدم ومبتكر مدعوم بأحدث أدوات الذكاء الاصطناعي التوليدي وهندسة الأوامر المتقدمة.
+            </p>
+            <div class="service-features-list">
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>هندسة أوامر احترافية (Prompt Engineering)</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>تجارب بصرية رائدة ومفاهيم تسويقية مبتكرة</span>
+              <span class="service-feat-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>دمج تقنيات الـ AI المتعددة في منتج واحد</span>
+            </div>
+            <a href="https://wa.me/201116017705?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%3A%20%D9%85%D8%AD%D8%AA%D9%88%D9%89%20%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9%D9%8A%20%D8%A8%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A" target="_blank" rel="noopener noreferrer" class="btn-service-action">
+              <span>طلب الخدمة</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         قسم الهدف المهني (Career Objective Section)
+         ========================================================================== -->
+    <section class="objective-section section-padding" id="objective">
+      <div class="container">
+        <div class="objective-box reveal-on-scroll">
+          <div class="objective-tag">الرؤية والهدف المهني</div>
+          <h2 class="section-title" style="margin-bottom: 1.5rem;">الهدف المهني</h2>
+          <div class="objective-quote-mark">“</div>
+          <p class="objective-text">
+            التطور كأخصائي رائد في إنتاج المحتوى البصري المدعوم بالذكاء الاصطناعي من خلال الجمع بين المعرفة الإعلامية، والتصميم، وإنتاج الفيديو، والذكاء الاصطناعي التوليدي لابتكار تجارب رقمية مميزة وذات قيمة إبداعية واتصالية حقيقية.
+          </p>
+          <div class="objective-pillars">
+            <div class="pillar-item">المعرفة الإعلامية</div>
+            <div class="pillar-item">التصميم البصري</div>
+            <div class="pillar-item">إنتاج ومونتاج الفيديو</div>
+            <div class="pillar-item">الذكاء الاصطناعي التوليدي</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         قسم التواصل (Contact Section)
+         ========================================================================== -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            تواصل مباشر
+          </div>
+          <h2 class="section-title">لنعمل معاً</h2>
+          <p class="section-subtitle">
+            هل لديك مشروع، تعاون، أو فرصة إبداعية؟ يسعدني التواصل معك ومناقشة تفاصيل العمل.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- بطاقات التواصل المباشر والمنصات -->
+          <div class="contact-info-col reveal-on-scroll">
+            
+            <!-- بطاقة البريد الإلكتروني -->
+            <div class="contact-direct-card">
+              <div class="contact-card-icon icon-email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">البريد الإلكتروني</span>
+                <span class="contact-card-val">karimaboela105@gmail.com</span>
+              </div>
+              <a href="mailto:karimaboela105@gmail.com" class="btn btn-secondary btn-sm">
+                إرسال بريد
+              </a>
+            </div>
+
+            <!-- بطاقة واتساب -->
+            <div class="contact-direct-card">
+              <div class="contact-card-icon icon-whatsapp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">واتساب</span>
+                <span class="contact-card-val">01116017705</span>
+              </div>
+              <a href="https://wa.me/201116017705" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                محادثة واتساب
+              </a>
+            </div>
+
+            <!-- بطاقة عرض اشتراك جيمناي برو -->
+            <div class="contact-direct-card gemini-card-spotlight">
+              <div class="contact-card-icon icon-gemini">
+                <svg viewBox="0 0 24 24" fill="none" style="width:26px;height:26px;">
+                  <path d="M12 24C12 17.3726 6.62742 12 0 12C6.62742 12 12 6.62742 12 0C12 6.62742 17.3726 12 24 12C17.3726 12 12 17.3726 12 24Z" fill="url(#geminiGradContact)"/>
+                  <defs>
+                    <linearGradient id="geminiGradContact" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#38bdf8"/>
+                      <stop offset="50%" stop-color="#a855f7"/>
+                      <stop offset="100%" stop-color="#ec4899"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-label" style="color: #c084fc; font-weight: 700;">اشتراك جيمناي برو (Gemini Pro)</span>
+                <span class="contact-card-val" style="font-size: 0.95rem; font-weight: 600;">لو حد محتاج اشتراك جيمناي برو 18 شهر بـ 200 جنيه يبعتلي</span>
+              </div>
+              <a href="https://wa.me/201116017705?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%AC%D9%8A%D9%85%D9%86%D8%A7%D9%8A%20%D8%A8%D8%B1%D9%88%2018%20%D8%B4%D9%87%D8%B1%20%D8%A8%D9%80%20200%20%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #a855f7, #ec4899); border: none;">
+                تواصل للاشتراك
+              </a>
+            </div>
+
+            <!-- روابط منصات التواصل الاجتماعي الرسمية -->
+            <div class="social-media-container">
+              <h3 class="social-title">تابعني على المنصات الرسمية</h3>
+              <div class="social-buttons-grid">
+                
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@karimmahmoud969" target="_blank" rel="noopener noreferrer" class="social-card-btn" title="تيك توك">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.16 1.18 2.09 2.35 2.29.98.19 2.05-.1 2.75-.82.52-.52.78-1.25.79-1.98.05-3.86.02-7.72.03-11.58.01-1.68-.02-3.35.03-5.03z"/>
+                  </svg>
+                  <span>TikTok</span>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/karimmahmoud52/" target="_blank" rel="noopener noreferrer" class="social-card-btn" title="إنستغرام">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/profile.php?id=100014812654684" target="_blank" rel="noopener noreferrer" class="social-card-btn" title="فيسبوك">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://youtube.com/@karimaboela" target="_blank" rel="noopener noreferrer" class="social-card-btn" title="يوتيوب">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                  <span>YouTube</span>
+                </a>
+
+                <!-- Behance -->
+                <a href="https://www.behance.net/karimaboela" target="_blank" rel="noopener noreferrer" class="social-card-btn" title="بيهانس">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-1.646 2.5-3.726 2.5-2.73 0-4.32-1.92-4.32-4.52 0-2.82 1.77-4.66 4.34-4.66 2.69 0 4.08 1.95 3.98 4.68h-6.19c.07 1.44.92 2.38 2.25 2.38.99 0 1.62-.48 1.94-1.12l1.726.74zM19.98 13c-.09-1.04-.76-1.72-1.84-1.72-1.07 0-1.78.69-1.87 1.72h3.71zM8.32 10.97c1.19-.48 1.83-1.42 1.83-2.58 0-2.22-1.72-3.39-4.25-3.39H0v14h6.05c2.69 0 4.54-1.28 4.54-3.75 0-1.74-.91-2.9-2.27-3.28zM3.13 7.21h2.52c1.28 0 1.99.52 1.99 1.48 0 .97-.73 1.54-1.99 1.54H3.13V7.21zm2.74 9.58H3.13v-3.76h2.74c1.37 0 2.19.64 2.19 1.84 0 1.27-.82 1.92-2.19 1.92z"/>
+                  </svg>
+                  <span>Behance</span>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- نموذج المراسلة المباشر -->
+          <div class="contact-form-card reveal-on-scroll">
+            <form class="contact-form" id="contactForm" novalidate>
+              
+              <div class="form-group">
+                <label for="senderName" class="form-label">الاسم الكريم</label>
+                <input type="text" id="senderName" class="form-input" placeholder="مثال: د. أحمد / المدير الإبداعي" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">البريد الإلكتروني</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="مثال: contact@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">موضوع الرسالة</label>
+                <input type="text" id="senderSubject" class="form-input" placeholder="مثال: استفسار عن تصميم سوشيال ميديا طبي أو إنتاج فيديو">
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">نص الرسالة</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="اكتب تفاصيل مشروعك أو فكرتك الإبداعية هنا..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btnSubmitContact">
+                <span>إرسال الرسالة</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div class="form-note">
+                ملاحظة: الضغط على إرسال يفتح تطبيق البريد الافتراضي لديك موجهاً إلى <strong>karimaboela105@gmail.com</strong>. كما يمكنك بدء محادثة فورية عبر واتساب على الرقم <strong>01116017705</strong>.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       الفوتر (Footer)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copyright">
+        جميع الحقوق محفوظة &copy; 2026 كريم محمود.
+      </div>
+
+      <div class="footer-links-group">
+        <a href="https://www.behance.net/karimaboela" target="_blank" rel="noopener noreferrer" class="footer-link">بيهانس</a>
+        <a href="https://youtube.com/@karimaboela" target="_blank" rel="noopener noreferrer" class="footer-link">يوتيوب</a>
+        <a href="#hero" class="back-to-top-btn" id="backToTopBtn" aria-label="العودة لأعلى الصفحة">
+          <span>العودة للأعلى</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       النوافذ المنبثقة ولايت بوكس (Modals & Lightbox)
+       ========================================================================== -->
+
+  <!-- 1. نافذة لايت بوكس لعرض الصور بالحجم الكامل مع دعم تصفح الألبومات -->
+  <div class="lightbox-overlay" id="lightboxOverlay" role="dialog" aria-modal="true" aria-label="عرض الصورة">
+    <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="إغلاق العرض">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+
+    <!-- عداد صور الألبوم -->
+    <div class="lightbox-counter" id="lightboxCounter">صورة 1 من 1</div>
+    
+    <button class="lightbox-nav-btn prev" id="lightboxPrevBtn" aria-label="العمل السابق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+    <button class="lightbox-nav-btn next" id="lightboxNextBtn" aria-label="العمل التالي">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+
+    <div class="lightbox-content-box">
+      <img src="" alt="" id="lightboxImage" class="lightbox-image">
+      <div class="lightbox-caption-box">
+        <div class="lightbox-caption-title" id="lightboxTitle"></div>
+        <div class="lightbox-caption-desc" id="lightboxDesc"></div>
+      </div>
+      <!-- شريط الصور المصغرة للتنقل بين صور الألبوم الواحد -->
+      <div class="lightbox-thumbs-strip" id="lightboxThumbsStrip"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       مسرح العرض الهولوجرامي ثلاثي الأبعاد للألبومات (3D Hologram Projection Stage)
+       ========================================================================== -->
+  <div class="hologram-overlay" id="hologramOverlay" role="dialog" aria-modal="true" aria-label="العرض الهولوجرامي ثلاثي الأبعاد">
+    <!-- خلفية الخطوط والشعاع الهولوجرامي -->
+    <div class="hologram-scanlines"></div>
+    <div class="hologram-cyber-grid"></div>
+
+    <!-- شريط معلومات وتحكم HUD العلوي -->
+    <header class="hologram-hud-top">
+      <div class="holo-hud-start">
+        <div class="holo-sys-badge">
+          <span class="holo-pulsing-node"></span>
+          <span class="holo-sys-text">HOLOGRAM MATRIX 3D // بث هولوجرامي متزامن</span>
+        </div>
+        <div class="holo-hud-album-meta">
+          <h2 class="holo-album-title" id="holoModalTitle">ألبوم التصاميم الطبية</h2>
+          <span class="holo-album-tag" id="holoModalSubtitle">عرض متزامن لـ 4 تصميمات جنباً إلى جنب</span>
+        </div>
+      </div>
+
+      <div class="holo-hud-controls">
+        <div class="holo-hud-telemetry" id="holoTelemetryText">
+          SYS: ONLINE • RES: 2048px • PERSPECTIVE: 3D
+        </div>
+        
+        <!-- زر التبديل بين العرض المتوازي (جنب بعض) والفحص الفردي المكبر -->
+        <button type="button" class="btn-holo-mode" id="holoModeToggleBtn" title="التبديل بين العرض الموازي والفحص المكبر">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg>
+          <span id="holoModeToggleText">عرض موازي (جنب بعض)</span>
+        </button>
+
+        <!-- زر إغلاق العرض الهولوجرامي -->
+        <button type="button" class="btn-holo-close" id="holoCloseBtn" aria-label="إغلاق العرض الهولوجرامي" title="إغلاق العرض [ESC]">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          <span>إغلاق</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- مسرح الإسقاط الهولوجرامي الرئيسي -->
+    <main class="hologram-viewport" id="hologramViewport">
+      
+      <!-- أرضية الإسقاط وقاعدة الشعاع الهولوجرامي -->
+      <div class="hologram-stage-floor">
+        <div class="hologram-floor-grid"></div>
+        <div class="hologram-emitter-pad">
+          <div class="emitter-ring emitter-ring-1"></div>
+          <div class="emitter-ring emitter-ring-2"></div>
+          <div class="emitter-ring emitter-ring-3"></div>
+        </div>
+        <div class="hologram-vertical-beam"></div>
+      </div>
+
+      <!-- حاوية التصميمات المعروضة جنباً إلى جنب (Side-by-Side 3D Hologram Cards) -->
+      <div class="hologram-cards-stage" id="hologramCardsStage">
+        <div class="hologram-row-header">
+          <span class="holo-header-line"></span>
+          <span class="holo-header-pill" id="holoHeaderCounter">عرض متزامن لـ 4 تصميمات بتقنية الهولوجرام (جنب بعض)</span>
+          <span class="holo-header-line"></span>
+        </div>
+
+        <div class="hologram-cards-row" id="hologramCardsRow">
+          <!-- يتم حقن بطاقات الهولوجرام الأربعة ديناميكياً هنا عبر الجافاسكريبت -->
+        </div>
+      </div>
+
+      <!-- وضع الفحص المكبر الفردي (Single Hologram Zoom Inspector) -->
+      <div class="hologram-solo-stage" id="hologramSoloStage" style="display: none;">
+        <div class="holo-solo-card">
+          <div class="holo-solo-header">
+            <span class="holo-badge" id="holoSoloBadge">[HOLO-01 // FULL-INSPECT]</span>
+            <span class="holo-solo-name" id="holoSoloName">تصميم طبي</span>
+            <button type="button" class="btn-holo-action" id="holoSoloBackBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              <span>العودة للعرض المتوازي (جنب بعض)</span>
+            </button>
+          </div>
+
+          <div class="holo-solo-media-wrap">
+            <div class="holo-corner tl"></div><div class="holo-corner tr"></div>
+            <div class="holo-corner bl"></div><div class="holo-corner br"></div>
+            <img src="" alt="" id="holoSoloImg" class="holo-solo-img">
+            <div class="holo-scan-sweep"></div>
+          </div>
+
+          <div class="holo-solo-footer">
+            <div class="holo-solo-nav">
+              <button type="button" class="btn-holo-nav prev" id="holoSoloPrevBtn" title="التصميم السابق">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>السابق</span>
+              </button>
+              <span class="holo-solo-counter" id="holoSoloCounter">1 / 4</span>
+              <button type="button" class="btn-holo-nav next" id="holoSoloNextBtn" title="التصميم التالي">
+                <span>التالي</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+            </div>
+
+            <div class="holo-solo-actions">
+              <a href="#" download class="btn-holo-action download" id="holoSoloDownloadBtn" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>تحميل بدقة كاملة</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- 2. نافذة مشغل الفيديو -->
+  <div class="modal-overlay" id="videoModalOverlay" role="dialog" aria-modal="true" aria-label="مشغل الفيديو">
+    <div class="video-modal-card">
+      <button class="lightbox-close-btn" id="videoModalCloseBtn" aria-label="إغلاق الفيديو">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="video-player-container" id="videoPlayerContainer">
+        <!-- يتم الحقن ديناميكياً: iframe يوتيوب أو وسم video -->
+      </div>
+
+      <div id="videoModalPlaylistContainer"></div>
+
+      <div class="video-modal-footer">
+        <h3 id="videoModalTitle" style="font-size: 1.25rem; font-weight: 800;"></h3>
+        <p id="videoModalDesc" style="font-size: 0.95rem; color: var(--text-secondary);"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. نافذة إضافة وتعديل مشروع -->
+  <div class="modal-overlay" id="projectModalOverlay" role="dialog" aria-modal="true" aria-label="إدارة المشروع">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="projectModalHeading">إضافة عمل جديد</h3>
+        <button class="modal-close-btn" id="projectModalCloseBtn" aria-label="إغلاق النافذة">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <form id="projectForm" class="modal-body">
+        <input type="hidden" id="projectEditId" value="">
+        <input type="hidden" id="projectFormType" value="design">
+
+        <!-- أزرار اختيار نوع العمل داخل النافذة -->
+        <div class="modal-type-switcher" id="modalTypeSwitcher">
+          <button type="button" class="type-switch-btn active" data-switch-type="video">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect width="14" height="14" x="1" y="5" rx="2" ry="2"></rect></svg>
+            <span>فيديو AI</span>
+          </button>
+          <button type="button" class="type-switch-btn" data-switch-type="cartoon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>نصائح كرتون</span>
+          </button>
+          <button type="button" class="type-switch-btn" data-switch-type="audio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+            <span>تعليق صوتي من جهازك</span>
+          </button>
+          <button type="button" class="type-switch-btn" data-switch-type="design">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            <span>تصميم / صور</span>
+          </button>
+        </div>
+
+        <!-- إشعار الحفظ التراكمي الدائم -->
+        <div class="modal-retention-notice" id="modalRetentionNotice">
+          <div class="retention-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="retention-text">
+            <strong>حفظ تراكمي دائم:</strong>
+            <span id="modalSavedCountText">جميع أعمالك السابقة تظل محفوظة دائماً في المتصفح. أي صور أو فيديوهات ترفعها الآن تُضاف فوقها مباشرة.</span>
+          </div>
+        </div>
+
+        <!-- عنوان العمل -->
+        <div class="form-group">
+          <label for="projectTitleInput" class="form-label">عنوان المشروع *</label>
+          <input type="text" id="projectTitleInput" class="form-input" placeholder="مثال: حملة عيادة جلدية وتجميل / ريلز ذكاء اصطناعي" required>
+        </div>
+
+        <!-- التصنيف -->
+        <div class="form-group">
+          <label for="projectCategoryInput" class="form-label">التصنيف</label>
+          <input type="text" id="projectCategoryInput" class="form-input" placeholder="مثال: تصميم سوشيال ميديا طبي / فيديو بالذكاء الاصطناعي">
+        </div>
+
+        <!-- الوصف -->
+        <div class="form-group">
+          <label for="projectDescInput" class="form-label">وصف موجز للعمل</label>
+          <textarea id="projectDescInput" class="form-textarea" style="min-height: 80px;" placeholder="اكتب تفاصيل توضيحية عن فكرة التصميم أو الفيديو..."></textarea>
+        </div>
+
+        <!-- رفع ملف أو رابط مع دعم السحب والإفلات وتحديد عدد غير محدود -->
+        <div class="form-group" id="mediaUploadGroup">
+          <label class="form-label" id="mediaUploadLabel">ملفات الوسائط (يمكنك رفع عدد غير محدود دفعة واحدة) *</label>
+          <div class="dropzone-area" id="dropzoneArea">
+            <div class="dropzone-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            </div>
+            <div class="dropzone-title" id="dropzoneTitle">اسحب وأفلت الملفات هنا أو اضغط للاختيار من جهازك</div>
+            <div class="dropzone-sub">يدعم اختيار <span>عشرات أو مئات الملفات (سعة غير محدودة)</span> دفعة واحدة</div>
+            <input type="file" id="projectFileInput" multiple style="display: none;">
+          </div>
+          <div class="batch-preview-strip" id="batchPreviewStrip" style="display: none;"></div>
+          <!-- شبكة اختيار صورة الغلاف ومعاينة صور الألبوم -->
+          <div class="modal-album-preview-grid" id="modalAlbumPreviewGrid" style="display: none;"></div>
+          <div class="batch-progress-wrapper" id="batchProgressWrapper">
+            <div class="batch-progress-info">
+              <span id="batchProgressText">جارٍ معالجة وتخزين الملفات...</span>
+              <span id="batchProgressPercent">0%</span>
+            </div>
+            <div class="batch-progress-bar">
+              <div class="batch-progress-fill" id="batchProgressFill"></div>
+            </div>
+          </div>
+          <small style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem; display: block;">
+            أو أدخل رابط فيديو يوتيوب أو رابط مباشر (اختياري عند عدم اختيار ملف):
+          </small>
+          <input type="url" id="projectUrlInput" class="form-input" style="margin-top: 0.35rem;" placeholder="مثال: https://youtu.be/... أو رابط مباشر">
+        </div>
+
+        <!-- اختيار اتجاه الفيديو (أفقي أو طولي ريلز) -->
+        <div class="form-group" id="videoAspectGroup" style="display: none;">
+          <label for="videoAspectSelect" class="form-label">اتجاه وأبعاد الفيديو</label>
+          <select id="videoAspectSelect" class="form-input">
+            <option value="16:9">أفقي عريض (16:9 Widescreen)</option>
+            <option value="9:16">طولي ريلز / تيك توك (9:16 Vertical)</option>
+          </select>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" id="projectModalCancelBtn">إلغاء</button>
+          <button type="submit" class="btn btn-primary btn-sm" id="projectModalSaveBtn">حفظ العمل</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. نافذة تأكيد الحذف -->
+  <div class="modal-overlay" id="deleteConfirmOverlay" role="dialog" aria-modal="true" aria-label="تأكيد الحذف">
+    <div class="modal-card" style="max-width: 440px;">
+      <div class="modal-header">
+        <h3 class="modal-title">حذف المشروع</h3>
+        <button class="modal-close-btn" id="deleteCancelBtnTop" aria-label="إغلاق">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-secondary); font-size: 1rem;">
+          هل أنت متأكد من رغبتك في حذف هذا المشروع؟ لا يمكن التراجع عن هذا الإجراء بعد تنفيذه.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" id="deleteCancelBtn">إلغاء</button>
+        <button type="button" class="btn btn-primary btn-sm" id="deleteConfirmBtn" style="background: #ef4444; color: #fff;">تأكيد الحذف</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- إشعار التنبيه العائم (Toast Notification) -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <div class="toast-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <span id="toastMessage">تمت العملية بنجاح</span>
+  </div>
+
+  <!-- ==========================================================================
+       ودجت وأيقونة جيمناي العائمة مع بطاقة العرض الحصري أعلاها مباشرة
+       ========================================================================== -->
+  <aside class="gemini-float-widget" id="geminiFloatWidget" aria-label="عرض اشتراك جيمناي برو">
+    <!-- بطاقة العرض الحصري تطفو مباشرة فوق أيقونة جيمناي -->
+    <div class="gemini-speech-bubble" id="geminiSpeechBubble">
+      <button type="button" class="gemini-bubble-close" id="geminiBubbleClose" title="إغلاق التنبيه" aria-label="إغلاق التنبيه">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="gemini-bubble-badge">
+        <span class="gemini-fire">🔥</span>
+        <span>عرض خاص ولفترة محدودة</span>
+      </div>
+      <p class="gemini-bubble-msg">
+        لو حد محتاج اشتراك <strong>جيمناي برو (Gemini Pro)</strong> 18 شهر بـ <strong>200 جنيه</strong> يبعتلي
+      </p>
+      <a href="https://wa.me/201116017705?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%AC%D9%8A%D9%85%D9%86%D8%A7%D9%8A%20%D8%A8%D8%B1%D9%88%2018%20%D8%B4%D9%87%D8%B1%20%D8%A8%D9%80%20200%20%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener noreferrer" class="gemini-bubble-cta">
+        <span>مراسلة عبر واتساب</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      </a>
+      <div class="gemini-bubble-arrow"></div>
+    </div>
+
+    <!-- زر وأيقونة جيمناي المتوهجة والبارزة -->
+    <a href="https://wa.me/201116017705?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%83%D8%B1%D9%8A%D9%85%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%AC%D9%8A%D9%85%D9%86%D8%A7%D9%8A%20%D8%A8%D8%B1%D9%88%2018%20%D8%B4%D9%87%D8%B1%20%D8%A8%D9%80%20200%20%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener noreferrer" class="gemini-icon-btn" id="geminiIconBtn" title="جيمناي برو - اضغط للمراسلة">
+      <span class="gemini-halo-ring"></span>
+      <span class="gemini-halo-ring-2"></span>
+      <div class="gemini-symbol-wrap">
+        <svg viewBox="0 0 24 24" fill="none" class="gemini-svg-star" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 24C12 17.3726 6.62742 12 0 12C6.62742 12 12 6.62742 12 0C12 6.62742 17.3726 12 24 12C17.3726 12 12 17.3726 12 24Z" fill="url(#geminiGradFloat)"/>
+          <defs>
+            <linearGradient id="geminiGradFloat" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="35%" stop-color="#818cf8"/>
+              <stop offset="70%" stop-color="#c084fc"/>
+              <stop offset="100%" stop-color="#f43f5e"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <span class="gemini-online-ping"></span>
+      <span class="gemini-btn-pill-label">Gemini Pro</span>
+    </a>
+  </aside>
+
+  <!-- ملف الجافاسكريبت الرئيسي -->
+  <script src="js/script.js"></script>
+</body>
+</html>

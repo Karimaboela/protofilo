@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roseBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140718"/>
+      <stop offset="50%" stop-color="#2a0d33"/>
+      <stop offset="100%" stop-color="#09030c"/>
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="laserGlow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#roseBg)"/>
+
+  <!-- Aesthetic Glows -->
+  <circle cx="400" cy="340" r="240" fill="url(#laserGrad)" opacity="0.15" filter="url(#laserGlow)"/>
+  <circle cx="750" cy="150" r="160" fill="#f43f5e" opacity="0.1" filter="url(#laserGlow)"/>
+
+  <!-- Category Pill -->
+  <rect x="60" y="50" width="180" height="36" rx="18" fill="rgba(244,63,94,0.12)" stroke="#f43f5e" stroke-width="1.5"/>
+  <text x="150" y="74" fill="#fb7185" font-family="'Cairo', sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    DERMA CLINIC • جلدية وتجميل
+  </text>
+  <text x="740" y="75" fill="#a1a1aa" font-family="'Cairo', sans-serif" font-size="14" font-weight="600" text-anchor="end">
+    حملة نضارة البشرة الرقمية
+  </text>
+
+  <!-- Central Laser & Glow Iconography -->
+  <g transform="translate(400, 330)">
+    <!-- Protective concentric circles -->
+    <circle cx="0" cy="0" r="150" fill="none" stroke="url(#pinkGrad)" stroke-width="1.5" stroke-dasharray="10 8" opacity="0.4"/>
+    <circle cx="0" cy="0" r="120" fill="rgba(236,72,153,0.08)"/>
+    
+    <!-- Stylized aesthetic face profile curve -->
+    <path d="M-40,-80 C-10,-80 15,-60 20,-30 C22,-10 35,-5 42,-5 C30,15 20,20 25,45 C28,60 15,75 -20,80" 
+          fill="none" stroke="#fbcfe8" stroke-width="4" stroke-linecap="round" filter="url(#laserGlow)"/>
+
+    <!-- Laser beam focus lines -->
+    <line x1="80" y1="-80" x2="25" y2="-20" stroke="url(#laserGrad)" stroke-width="3" filter="url(#laserGlow)"/>
+    <circle cx="25" cy="-20" r="8" fill="#fb7185" filter="url(#laserGlow)"/>
+    <circle cx="25" cy="-20" r="3" fill="#ffffff"/>
+
+    <!-- Sparkles -->
+    <path d="M-80,-20 L-76,-8 L-64,-5 L-76,-2 L-80,10 L-84,-2 L-96,-5 L-84,-8 Z" fill="#f43f5e"/>
+    <path d="M60,60 L63,68 L72,70 L63,72 L60,80 L57,72 L48,70 L57,68 Z" fill="#e879f9"/>
+  </g>
+
+  <!-- Headings -->
+  <text x="400" y="560" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="42" font-weight="800" text-anchor="middle">
+    أحدث تقنيات الليزر ونضارة البشرة
+  </text>
+  <text x="400" y="610" fill="#f472b6" font-family="'Cairo', sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    جلسات علاجية متخصصة بأيدي أطباء استشاريين
+  </text>
+
+  <!-- Feature grid -->
+  <g transform="translate(400, 680)">
+    <rect x="-240" y="-22" width="480" height="44" rx="14" fill="rgba(255,255,255,0.05)" stroke="rgba(244,63,94,0.3)"/>
+    <text x="0" y="7" fill="#fce7f3" font-family="'Cairo', sans-serif" font-size="16" font-weight="600" text-anchor="middle">
+      ✓ نتائج سريعة  •  ✓ بدون فترة نقاهة  •  ✓ أجهزة معتمدة عالميًا
+    </text>
+  </g>
+
+  <text x="400" y="760" fill="#71717a" font-family="'Cairo', sans-serif" font-size="13" font-weight="500" text-anchor="middle">
+    تصميم كريم محمود • Medical Social Media Designer
+  </text>
+</svg>

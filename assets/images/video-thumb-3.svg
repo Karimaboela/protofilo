@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vid3Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a051d"/>
+      <stop offset="50%" stop-color="#180e3d"/>
+      <stop offset="100%" stop-color="#04020a"/>
+    </linearGradient>
+    <linearGradient id="glowPlay3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="videoGlow3">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#vid3Bg)"/>
+
+  <!-- High-tech cyber grid & waves -->
+  <g opacity="0.18" stroke="#c084fc" stroke-width="1.5">
+    <circle cx="640" cy="360" r="320" fill="none" stroke-dasharray="20 12"/>
+    <circle cx="640" cy="360" r="240" fill="none"/>
+    <circle cx="640" cy="360" r="160" fill="none" stroke-dasharray="8 8"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+  </g>
+
+  <!-- Tag badge -->
+  <rect x="80" y="60" width="310" height="48" rx="24" fill="rgba(168,85,247,0.15)" stroke="#c084fc" stroke-width="2"/>
+  <text x="235" y="92" fill="#c084fc" font-family="'Cairo', sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    MEDICAL AI ANIMATION • محاكاة طبية
+  </text>
+
+  <!-- Big Play Button Center -->
+  <circle cx="640" cy="340" r="70" fill="url(#glowPlay3)" filter="url(#videoGlow3)" opacity="0.95"/>
+  <polygon points="625,310 670,340 625,370" fill="#0a051d"/>
+
+  <!-- Title Bottom -->
+  <rect x="0" y="540" width="1280" height="180" fill="linear-gradient(to top, rgba(10,5,29,0.95), transparent)"/>
+  <text x="640" y="610" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="36" font-weight="800" text-anchor="middle">
+    محاكاة طبية ورعاية صحية بصرية متقدمة | Medical 3D & AI
+  </text>
+  <text x="640" y="660" fill="#e9d5ff" font-family="'Cairo', sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    سرد بصري متطور يحاكي العمليات والتقنيات الطبية بدقة سينمائية
+  </text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041527"/>
+      <stop offset="100%" stop-color="#0b2b48"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#fda085"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- Aesthetic Medical Waves & Curves -->
+  <path d="M0,200 Q200,100 400,220 T800,150 L800,0 L0,0 Z" fill="#00f2fe" opacity="0.06"/>
+  <circle cx="700" cy="180" r="220" fill="url(#cyanGrad)" opacity="0.12" filter="url(#softGlow)"/>
+  <circle cx="100" cy="700" r="180" fill="#00f2fe" opacity="0.08"/>
+
+  <!-- Brand Top Bar -->
+  <rect x="60" y="50" width="140" height="36" rx="18" fill="rgba(255,255,255,0.08)" stroke="#00f2fe" stroke-width="1.5"/>
+  <text x="130" y="74" fill="#00f2fe" font-family="'Cairo', sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    DENTAL CARE • عيادات
+  </text>
+  <text x="740" y="75" fill="#94a3b8" font-family="'Cairo', sans-serif" font-size="14" font-weight="600" text-anchor="end">
+    تصميم سوشيال ميديا طبي
+  </text>
+
+  <!-- Central Visual Element: Stylized 3D Aesthetic Tooth with Sparkle -->
+  <g transform="translate(400, 360)">
+    <!-- Glow ring -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="url(#cyanGrad)" stroke-width="2" stroke-dasharray="12 8" opacity="0.5"/>
+    <circle cx="0" cy="0" r="130" fill="rgba(0, 242, 254, 0.05)"/>
+    
+    <!-- Tooth silhouette with clean medical styling -->
+    <path d="M-60,-50 C-60,-95 -20,-100 0,-70 C20,-100 60,-95 60,-50 C60,-15 45,20 35,75 C28,105 10,105 0,80 C-10,105 -28,105 -35,75 C-45,20 -60,-15 -60,-50 Z" 
+          fill="#ffffff" opacity="0.95" filter="url(#softGlow)"/>
+    
+    <!-- Tooth shine highlight -->
+    <path d="M-35,-40 C-35,-70 -15,-75 0,-55 C-15,-55 -30,-30 -25,-10 Z" fill="#38bdf8" opacity="0.6"/>
+    
+    <!-- Magic sparkles -->
+    <path d="M-70,-60 L-65,-45 L-50,-40 L-65,-35 L-70,-20 L-75,-35 L-90,-40 L-75,-45 Z" fill="#00f2fe" filter="url(#softGlow)"/>
+    <path d="M75,-30 L80,-20 L90,-15 L80,-10 L75,0 L70,-10 L60,-15 L70,-20 Z" fill="url(#goldGrad)" filter="url(#softGlow)"/>
+    <circle cx="50" cy="60" r="6" fill="#38bdf8"/>
+    <circle cx="-55" cy="45" r="4" fill="#38bdf8"/>
+  </g>
+
+  <!-- Main Headline (Arabic RTL) -->
+  <text x="400" y="580" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="44" font-weight="800" text-anchor="middle">
+    ابتسامة هوليوود الطبيعية
+  </text>
+  <text x="400" y="625" fill="#38bdf8" font-family="'Cairo', sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    أحدث تقنيات الفينير وتجميل الأسنان بدون ألم
+  </text>
+
+  <!-- Medical Features Badges -->
+  <g transform="translate(400, 690)">
+    <!-- Badge 1 -->
+    <g transform="translate(-220, 0)">
+      <rect x="-80" y="-20" width="160" height="40" rx="12" fill="rgba(15, 23, 42, 0.8)" stroke="#334155"/>
+      <text x="0" y="6" fill="#f8fafc" font-family="'Cairo', sans-serif" font-size="14" font-weight="600" text-anchor="middle">✦ دقة متناهية</text>
+    </g>
+    <!-- Badge 2 -->
+    <g transform="translate(0, 0)">
+      <rect x="-80" y="-20" width="160" height="40" rx="12" fill="rgba(15, 23, 42, 0.8)" stroke="#00f2fe" stroke-width="1.5"/>
+      <text x="0" y="6" fill="#00f2fe" font-family="'Cairo', sans-serif" font-size="14" font-weight="700" text-anchor="middle">✦ استشارة فورية</text>
+    </g>
+    <!-- Badge 3 -->
+    <g transform="translate(220, 0)">
+      <rect x="-80" y="-20" width="160" height="40" rx="12" fill="rgba(15, 23, 42, 0.8)" stroke="#334155"/>
+      <text x="0" y="6" fill="#f8fafc" font-family="'Cairo', sans-serif" font-size="14" font-weight="600" text-anchor="middle">✦ ضمان معتمد</text>
+    </g>
+  </g>
+
+  <!-- Bottom Watermark -->
+  <text x="400" y="760" fill="#64748b" font-family="'Cairo', sans-serif" font-size="13" font-weight="500" text-anchor="middle">
+    تصميم كريم محمود • Medical Social Media Designer
+  </text>
+</svg>

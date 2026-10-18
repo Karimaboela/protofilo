@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vid2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120420"/>
+      <stop offset="50%" stop-color="#240c3c"/>
+      <stop offset="100%" stop-color="#080210"/>
+    </linearGradient>
+    <linearGradient id="purplePlay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="videoGlow2">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#vid2Bg)"/>
+
+  <!-- Aesthetic soundwaves / timeline tracks -->
+  <g opacity="0.2" stroke="#ec4899" stroke-width="2">
+    <path d="M0,360 Q320,200 640,360 T1280,360"/>
+    <path d="M0,360 Q320,520 640,360 T1280,360"/>
+    <line x1="200" y1="260" x2="200" y2="460" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="300" y1="200" x2="300" y2="520" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="980" y1="220" x2="980" y2="500" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="1080" y1="280" x2="1080" y2="440" stroke="#8b5cf6" stroke-width="3"/>
+  </g>
+
+  <!-- Tag badge -->
+  <rect x="80" y="60" width="280" height="48" rx="24" fill="rgba(236,72,153,0.15)" stroke="#ec4899" stroke-width="2"/>
+  <text x="220" y="92" fill="#f472b6" font-family="'Cairo', sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    AI MOTION &amp; REELS • يوتيوب
+  </text>
+
+  <!-- Big Play Button Center -->
+  <circle cx="640" cy="340" r="70" fill="url(#purplePlay)" filter="url(#videoGlow2)" opacity="0.95"/>
+  <polygon points="625,310 670,340 625,370" fill="#ffffff"/>
+
+  <!-- Title Bottom -->
+  <text x="640" y="610" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="38" font-weight="800" text-anchor="middle">
+    فيديو ترويجي إبداعي | AI Generated Video
+  </text>
+  <text x="640" y="660" fill="#f472b6" font-family="'Cairo', sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    صناعة محتوى فيديو سريع ومبتكر يجمع بين السرد القصصي والمؤثرات البصرية
+  </text>
+</svg>

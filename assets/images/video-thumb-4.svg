@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vid4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02141a"/>
+      <stop offset="50%" stop-color="#072b38"/>
+      <stop offset="100%" stop-color="#010a0e"/>
+    </linearGradient>
+    <linearGradient id="glowPlay4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="videoGlow4">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#vid4Bg)"/>
+
+  <!-- High-tech cyber grid & waves -->
+  <g opacity="0.18" stroke="#34d399" stroke-width="1.5">
+    <circle cx="640" cy="360" r="320" fill="none" stroke-dasharray="24 16"/>
+    <circle cx="640" cy="360" r="230" fill="none"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+  </g>
+
+  <!-- Tag badge -->
+  <rect x="80" y="60" width="310" height="48" rx="24" fill="rgba(16,185,129,0.15)" stroke="#34d399" stroke-width="2"/>
+  <text x="235" y="92" fill="#34d399" font-family="'Cairo', sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    DIGITAL CAMPAIGN • إعلان بالذكاء الاصطناعي
+  </text>
+
+  <!-- Big Play Button Center -->
+  <circle cx="640" cy="340" r="70" fill="url(#glowPlay4)" filter="url(#videoGlow4)" opacity="0.95"/>
+  <polygon points="625,310 670,340 625,370" fill="#02141a"/>
+
+  <!-- Title Bottom -->
+  <rect x="0" y="540" width="1280" height="180" fill="linear-gradient(to top, rgba(2,20,26,0.95), transparent)"/>
+  <text x="640" y="610" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="36" font-weight="800" text-anchor="middle">
+    ترويج طبي رقمي ومؤثرات صوتية هوليوودية | AI Promo Video
+  </text>
+  <text x="640" y="660" fill="#6ee7b7" font-family="'Cairo', sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    حملة فيديو تسويقية متكاملة تعزز انتشار العلامة الطبية بأسلوب هوليوودي
+  </text>
+</svg>

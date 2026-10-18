@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="trioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="holoGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <filter id="softGlowTrio" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#trioBg)"/>
+
+  <!-- Hologram Grid & Geometric Rings -->
+  <g opacity="0.22" stroke="url(#holoGlow)" stroke-width="1.5">
+    <ellipse cx="640" cy="400" rx="460" ry="160" fill="none" stroke-dasharray="14 10"/>
+    <ellipse cx="640" cy="400" rx="340" ry="110" fill="none"/>
+    <line x1="180" y1="400" x2="1100" y2="400"/>
+  </g>
+
+  <!-- Holographic Beam Effect Upwards -->
+  <polygon points="340,400 940,400 780,120 500,120" fill="url(#holoGlow)" opacity="0.08"/>
+
+  <!-- Character 1: علي (Left Avatar) -->
+  <g transform="translate(420, 290)">
+    <circle cx="0" cy="0" r="85" fill="#04202c" stroke="#2dd4bf" stroke-width="3" filter="url(#softGlowTrio)"/>
+    <path d="M -50 70 Q 0 60 50 70 L 60 85 L -60 85 Z" fill="#0f766e"/>
+    <circle cx="0" cy="5" r="40" fill="#fed7aa"/>
+    <!-- Prayer cap -->
+    <path d="M -38 -2 C -38 -40, 38 -40, 38 -2 Z" fill="#ffffff" stroke="#2dd4bf" stroke-width="2"/>
+    <circle cx="-14" cy="7" r="6" fill="#0f172a"/>
+    <circle cx="14" cy="7" r="6" fill="#0f172a"/>
+    <path d="M -10 20 Q 0 30 10 20" fill="none" stroke="#0f766e" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-40" y="90" width="80" height="26" rx="13" fill="rgba(45,212,191,0.2)" stroke="#2dd4bf" stroke-width="1.5"/>
+    <text x="0" y="108" fill="#2dd4bf" font-family="'Cairo', sans-serif" font-size="15" font-weight="700" text-anchor="middle">الأمانة</text>
+  </g>
+
+  <!-- Character 2: الصدق (Center Avatar - Bigger) -->
+  <g transform="translate(640, 250)">
+    <circle cx="0" cy="0" r="105" fill="#0b1b36" stroke="#38bdf8" stroke-width="4" filter="url(#softGlowTrio)"/>
+    <path d="M -60 85 Q 0 70 60 85 L 70 105 L -70 105 Z" fill="#38bdf8"/>
+    <circle cx="0" cy="10" r="48" fill="#fed7aa"/>
+    <!-- Boy hair -->
+    <path d="M -48 5 C -52 -38, -18 -45, 0 -42 C 18 -45, 52 -38, 48 5 C 40 -12, 18 -20, 0 -18 C -18 -20, -40 -12, -48 5 Z" fill="#334155"/>
+    <circle cx="-16" cy="12" r="7" fill="#0f172a"/>
+    <circle cx="16" cy="12" r="7" fill="#0f172a"/>
+    <path d="M -14 26 Q 0 38 14 26" fill="none" stroke="#b91c1c" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="-45" y="110" width="90" height="28" rx="14" fill="rgba(56,189,248,0.2)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="0" y="130" fill="#38bdf8" font-family="'Cairo', sans-serif" font-size="16" font-weight="800" text-anchor="middle">الصدق</text>
+  </g>
+
+  <!-- Character 3: الإحسان (Right Avatar) -->
+  <g transform="translate(860, 290)">
+    <circle cx="0" cy="0" r="85" fill="#1f0a2e" stroke="#e879f9" stroke-width="3" filter="url(#softGlowTrio)"/>
+    <path d="M -50 70 Q 0 60 50 70 L 60 85 L -60 85 Z" fill="#c084fc"/>
+    <ellipse cx="0" cy="5" rx="44" ry="48" fill="#f472b6"/>
+    <ellipse cx="0" cy="8" rx="33" ry="36" fill="#fed7aa"/>
+    <circle cx="-13" cy="8" r="6" fill="#0f172a"/>
+    <circle cx="13" cy="8" r="6" fill="#0f172a"/>
+    <path d="M -10 21 Q 0 31 10 21" fill="none" stroke="#be123c" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-40" y="90" width="80" height="26" rx="13" fill="rgba(232,121,249,0.2)" stroke="#e879f9" stroke-width="1.5"/>
+    <text x="0" y="108" fill="#e879f9" font-family="'Cairo', sans-serif" font-size="15" font-weight="700" text-anchor="middle">الإحسان</text>
+  </g>
+
+  <!-- Hologram Badge Center-Top -->
+  <rect x="360" y="45" width="560" height="50" rx="25" fill="rgba(168,85,247,0.18)" stroke="#c084fc" stroke-width="2"/>
+  <text x="640" y="78" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="21" font-weight="800" text-anchor="middle">
+    ✨ ألبوم هولوجرامي: باقة النصائح والقصص الكرتونية
+  </text>
+
+  <!-- Bottom Details & Typography -->
+  <rect x="0" y="530" width="1280" height="190" fill="linear-gradient(to top, rgba(2,6,23,0.98), transparent)"/>
+  
+  <text x="640" y="605" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="36" font-weight="800" text-anchor="middle">
+    روائع القصص الكرتونية: التعاون والصدق وحفظ النعمة
+  </text>
+  <text x="640" y="655" fill="#38bdf8" font-family="'Cairo', sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    ألبوم فيديو كرتوني متكامل (4 حلقات هولوجرامية) يعلم الأطفال القيم والأخلاق الحميدة
+  </text>
+</svg>

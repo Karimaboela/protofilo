@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aserBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1b36"/>
+      <stop offset="50%" stop-color="#103657"/>
+      <stop offset="100%" stop-color="#061224"/>
+    </linearGradient>
+    <linearGradient id="aserSun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="aserGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="playBtnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#aserBg)"/>
+
+  <!-- Decorative Islamic Geometric & Stars Pattern -->
+  <g opacity="0.18" stroke="#38bdf8" stroke-width="1.5">
+    <circle cx="640" cy="360" r="320" fill="none" stroke-dasharray="14 10"/>
+    <circle cx="640" cy="360" r="240" fill="none"/>
+    <polygon points="640,80 880,360 640,640 400,360" fill="none" stroke-width="2"/>
+    <polygon points="640,120 840,360 640,600 440,360" fill="none" stroke-width="1"/>
+  </g>
+
+  <!-- Cartoon Cloud Elements -->
+  <g fill="#1e293b" opacity="0.45">
+    <circle cx="220" cy="220" r="70"/>
+    <circle cx="280" cy="200" r="90"/>
+    <circle cx="350" cy="220" r="65"/>
+    <circle cx="1060" cy="200" r="80"/>
+    <circle cx="1120" cy="220" r="60"/>
+  </g>
+
+  <!-- Character Avatar Illustration: آسر (Boy Character) -->
+  <g transform="translate(640, 290)">
+    <!-- Aura behind character -->
+    <circle cx="0" cy="0" r="145" fill="url(#aserSun)" opacity="0.22" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="120" fill="#0f172a" stroke="#38bdf8" stroke-width="4"/>
+    
+    <!-- Shoulders / Thobe -->
+    <path d="M -70 100 Q 0 85 70 100 L 80 120 L -80 120 Z" fill="#38bdf8"/>
+    <path d="M -50 100 Q 0 90 50 100 L 60 120 L -60 120 Z" fill="#ffffff"/>
+
+    <!-- Head / Face -->
+    <circle cx="0" cy="10" r="55" fill="#fed7aa"/>
+    <!-- Cheeks blush -->
+    <circle cx="-30" cy="24" r="9" fill="#f472b6" opacity="0.6"/>
+    <circle cx="30" cy="24" r="9" fill="#f472b6" opacity="0.6"/>
+    <!-- Big bright eyes -->
+    <ellipse cx="-20" cy="10" rx="9" ry="12" fill="#0f172a"/>
+    <circle cx="-18" cy="7" r="4" fill="#ffffff"/>
+    <ellipse cx="20" cy="10" rx="9" ry="12" fill="#0f172a"/>
+    <circle cx="22" cy="7" r="4" fill="#ffffff"/>
+    <!-- Smiling mouth -->
+    <path d="M -16 28 Q 0 42 16 28" fill="none" stroke="#b91c1c" stroke-width="4" stroke-linecap="round"/>
+    <!-- Cute friendly hair (Boy) -->
+    <path d="M -55 5 C -60 -45, -20 -55, 0 -50 C 20 -55, 60 -45, 55 5 C 45 -15, 20 -25, 0 -22 C -20 -25, -45 -15, -55 5 Z" fill="#334155"/>
+    <path d="M -20 -40 Q 5 -55 25 -35 Q 0 -45 -20 -40 Z" fill="#475569"/>
+    <!-- Star badge -->
+    <polygon points="0,-72 6,-60 18,-60 9,-52 13,-40 0,-47 -13,-40 -9,-52 -18,-60 -6,-60" fill="url(#aserGold)"/>
+  </g>
+
+  <!-- Big Play Button Center-Right -->
+  <g transform="translate(640, 310)" filter="url(#softGlow)">
+    <circle cx="0" cy="0" r="52" fill="url(#playBtnGrad)" opacity="0.95"/>
+    <polygon points="-12,-20 22,0 -12,20" fill="#ffffff"/>
+  </g>
+
+  <!-- Top Badges -->
+  <rect x="70" y="50" width="310" height="46" rx="23" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2"/>
+  <text x="225" y="80" fill="#38bdf8" font-family="'Cairo', sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    🎬 نصائح كرتون هادفة للأطفال
+  </text>
+
+  <rect x="910" y="50" width="300" height="46" rx="23" fill="rgba(251,191,36,0.15)" stroke="#fbbf24" stroke-width="2"/>
+  <text x="1060" y="80" fill="#fbbf24" font-family="'Cairo', sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    ⭐ قيم وتربية إسلامية هادفة
+  </text>
+
+  <!-- Bottom Details & Typography -->
+  <rect x="0" y="530" width="1280" height="190" fill="linear-gradient(to top, rgba(6,18,36,0.98), transparent)"/>
+  
+  <text x="640" y="605" fill="#ffffff" font-family="'Cairo', sans-serif" font-size="36" font-weight="800" text-anchor="middle">
+    نصائح كرتونية: فضل الصدق والأمانة وقول الحق
+  </text>
+  <text x="640" y="655" fill="#38bdf8" font-family="'Cairo', sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    مشهد كرتوني تعليمي هادف يغرس في نفوس الأطفال شجاعة الصدق وحب الأمانة
+  </text>
+</svg>
